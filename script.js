@@ -12,8 +12,7 @@ let weather = {
             "https://api.openweathermap.org/data/2.5/weather?q=" 
             + city 
             + "&units=imperial&appid=" 
-            // + this.apiKey
-            //  Couldn't get this.apiKey to work? Kept rendering as "undefined"
+            // + this.apiKey   //  Couldn't get this.apiKey to work? Kept rendering as "undefined"
             + "d0e3b1b5303a0ce18fa3c964d47de025"
         )
             .then((response) => response.json())
@@ -31,7 +30,7 @@ let weather = {
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + " mph";
         document.querySelector(".weather").classList.remove("loading")
-        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')" // + name + for City Picture, + description + for Weather picture
     },
     search: function() {
         this.fetchWeather(document.querySelector(".search-bar").value);
