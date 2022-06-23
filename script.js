@@ -45,4 +45,4 @@ document.querySelector(".search-bar").addEventListener("keyup", function (event)
         };
 });
 
-weather.fetchWeather("New York");
+weather.fetchWeather("Miami");
