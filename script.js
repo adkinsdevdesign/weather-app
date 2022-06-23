@@ -2,11 +2,12 @@
 // https://api.openweathermap.org/data/3.0/onecall?lat={33.44}&lon={-94.04}&units=imperial&exclude={part}&appid={apiKey}
 
 // 2.5 Version
-// https://api.openweathermap.org/data/2.5/weather?q=Denver&units=imperial&appid=d0e3b1b5303a0ce18fa3c964d47de025
+// https://api.openweathermap.org/data/2.5/weather?q=Denver&units=imperial&appid={apiKey}
+
+// console.log(process.env.REACT_APP_OPENWEATHER_API_KEY)
 
 let weather = {
     fetchWeather: function (city) {
-        apiKey = "d0e3b1b5303a0ce18fa3c964d47de025",
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q=" 
             + city 
