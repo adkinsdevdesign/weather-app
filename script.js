@@ -1,5 +1,5 @@
 // 3.0 Version (doesn't work?)
-// https://api.openweathermap.org/data/3.0/onecall?lat={33.44}&lon={-94.04}&units=imperial&exclude={part}&appid={d0e3b1b5303a0ce18fa3c964d47de025}
+// https://api.openweathermap.org/data/3.0/onecall?lat={33.44}&lon={-94.04}&units=imperial&exclude={part}&appid={apiKey}
 
 // 2.5 Version
 // https://api.openweathermap.org/data/2.5/weather?q=Denver&units=imperial&appid=d0e3b1b5303a0ce18fa3c964d47de025
@@ -26,9 +26,9 @@ let weather = {
         document.querySelector(".city").innerText = "Weather in " + name;
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".description").innerText = description;
-        document.querySelector(".temp").innerText = temp + "°F";
+        document.querySelector(".temp").innerText = temp + " °F";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText = "Wind Speed: " + speed + "mph";
+        document.querySelector(".wind").innerText = "Wind Speed: " + speed + " mph";
         document.querySelector(".weather").classList.remove("loading")
         document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
     },
