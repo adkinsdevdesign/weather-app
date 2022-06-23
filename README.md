@@ -1,5 +1,8 @@
-## Objective:
+## About:
 Simple weather web application utilizing an API from openweathermap.org. 
 
-## License:
-Data and database are open and licensed by https://opendatacommons.org/licenses/odbl/
+## Credit:
+API: Open Weather | https://openweathermap.org/
+Google Fonts | https://fonts.google.com/
+Images and Icons | https://unsplash.com/
+Icons | https://fontawesome.com/
