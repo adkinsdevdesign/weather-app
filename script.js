@@ -4,8 +4,6 @@
 // 2.5 Version
 // https://api.openweathermap.org/data/2.5/weather?q=Denver&units=imperial&appid={apiKey}
 
-// console.log(process.env.REACT_APP_OPENWEATHER_API_KEY)
-
 let weather = {
     fetchWeather: function (city) {
         fetch(
@@ -47,4 +45,4 @@ document.querySelector(".search-bar").addEventListener("keyup", function (event)
         };
 });
 
-weather.fetchWeather("Denver");
+weather.fetchWeather("New York");
