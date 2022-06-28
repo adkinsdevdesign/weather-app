@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -87,4 +88,34 @@ h1.temp {
     position: absolute;
     top: 0;
     left: 20px;
+}
+
+.portfolio-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    width: 200px;
+    padding-top: 10px;
+    outline: none;
+    background: #202020d0;
+    color: white;
+}
+
+.portfolio-link:hover {
+    filter: brightness(120%);
+    transition: 0.2s ease-in-out;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    width: 200px;
+    padding-top: 10px;
+    outline: none;
+    background: #202020d0;
+    color: white;
 }
